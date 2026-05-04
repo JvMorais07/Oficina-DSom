@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSom - Serviços Automotivos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <img class="logo" src="assets/Logo.jpg" alt="DSom Logo" />
+    <nav>
+      <a href="https://wa.me/message/5OA4YKP43IR6E1">Contato</a>
+      <a href="#">Sobre nós</a>
+      <button class="btn-primary">Agendar Serviço</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="assets/fundo.jpeg" alt="Oficina DSom" class="hero-img">
+</section>
+<section class="services container">
+  <h2>Nossos serviços especializados</h2>
+  <div class="grid" id="servicesGrid">
+  </div>
+</section>
+
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="" class="modal-image" />
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <button class="whats-btn" id="whatsBtn">
+      <img src="assets/Mensagem.png" alt="WhatsApp" class="whats-icon" />
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
