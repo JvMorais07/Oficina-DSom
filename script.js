@@ -30,7 +30,7 @@ const services = [
   {
     title: "Instalação de alto-falante",
     desc: "Upgrade de áudio com instalação profissional de alto-falantes.",
-    image: "assets/autofalante.png",
+    image: "assets/altofalante.png",
     width: "100%",
     height: "60%"
   },
@@ -117,7 +117,7 @@ closeModal.onclick = () => modal.style.display = "none";
 // WhatsApp redirecionamento
 whatsBtn.addEventListener("click", () => {
   const message = `Olá! Gostaria de saber mais sobre: ${modalTitle.textContent}`;
-  const phoneNumber = "+XXXXXXXXXXXXX";
+  const phoneNumber = "+XXXXXXXXXXXXX"; // Substitua pelo número de telefone real
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, "_blank");
 });
