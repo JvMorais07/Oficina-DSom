@@ -22,7 +22,7 @@ body {
   background: #000;
   padding: 15px 0;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav {
@@ -38,6 +38,17 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+}
+
+.nav nav a.btn-primary {
+  background: red;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .btn-primary {
@@ -94,8 +105,11 @@ body {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   border: 1px solid #333;
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .card:hover { transform: translateY(-5px); border-color: red; }
@@ -103,9 +117,11 @@ body {
 .card-image {
   width: 100%;
   height: 140px;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 15px;
-  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card h3 {
@@ -115,6 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .card button {
@@ -126,6 +143,7 @@ body {
   font-weight: bold;
   margin-top: auto;
   border-radius: 4px;
+  width: 100%;
 }
 
 .modal {
@@ -197,3 +215,109 @@ body {
   .nav nav { display: none; }
 }
 @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+
+.footer {
+  background: #000;
+  color: #ccc;
+  padding: 40px 0 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.agendamento {
+  background: #222;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.agendamento h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.agendamento p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.agendamento .btn-primary {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.05rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-contact {
+  flex: 1 1 320px;
+}
+
+.footer-about h2,
+.footer-contact h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-about p {
+  line-height: 1.8;
+  color: #bbb;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #111;
+  border: 1px solid #333;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer-copy {
+  margin-top: 25px;
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: left;
+    text-align: right;
+  }
+
+  .footer-about,
+  .footer-contact {
+    flex: 1 1 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
