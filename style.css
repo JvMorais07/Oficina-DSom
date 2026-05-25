@@ -252,7 +252,7 @@ body {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -261,6 +261,7 @@ body {
 .footer-about,
 .footer-contact {
   flex: 1 1 320px;
+  text-align: center;
 }
 
 .footer-about h2,
